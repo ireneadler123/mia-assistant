@@ -58,3 +58,6 @@ def generate_response(prompt):
             messages=messages
 )
     return response['choices'][0]['message']['content'].strip()
+
+if __name__ == "__main__":
+    main()
