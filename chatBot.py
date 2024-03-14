@@ -2,10 +2,18 @@ import streamlit as st
 import openai
 import datetime
 import time
+from openai import OpenAI
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+# Sử dụng khóa API của OpenAI
+openai = OpenAI(OPENAI_API_KEY)
 
 st.set_page_config(layout='wide', page_title='Học Tiếng Anh cùng trợ lý ảo Mia', page_icon='heart')
 # Set API key for OpenAI. Replace 'YOUR_OPENAI_API_KEY' with your actual API key.
-openai.api_key = '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'
+openai.api_key = secure
 
 name = st.text_input('Hãy cho Mia xin tên của bạn nhé')
 
