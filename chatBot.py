@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 import os
 
 load_dotenv()
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+OPENAI_API_KEY = os.getenv(OPENAI_API_KEY)
 # Sử dụng khóa API của OpenAI
 openaiapi = OpenAI(OPENAI_API_KEY)
 
