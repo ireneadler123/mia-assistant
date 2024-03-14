@@ -34,7 +34,7 @@ def main():
         # Người dùng nhập prompt
         prompt = st.text_area("Bạn muốn hỏi Mia điều gì?", "")
 
-        if st.button("Tạo câu trả lời"):
+        if st.button("Gửi câu hỏi tới Mia"):
 
             with st.spinner('Bạn chờ xíu nhé! Mia trả lời ngay thôi'):
                 time.sleep(10)
