@@ -7,13 +7,14 @@ from dotenv import load_dotenv
 import os
 
 load_dotenv()
-OPENAI_API_KEY = os.getenv(OPENAI_API_KEY)
+OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
+
 # Sử dụng khóa API của OpenAI
-openaiapi = OpenAI(OPENAI_API_KEY)
+# openaiapi = OpenAI(OPENAI_API_KEY)
 
 st.set_page_config(layout='wide', page_title='Học Tiếng Anh cùng trợ lý ảo Mia', page_icon='heart')
 # Set API key for OpenAI. Replace 'YOUR_OPENAI_API_KEY' with your actual API key.
-openai.api_key = openaiapi
+openai.api_key = OPENAI_API_KEY
 
 name = st.text_input('Hãy cho Mia xin tên của bạn nhé')
 
