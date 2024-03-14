@@ -1,4 +1,4 @@
 streamlit
-openai
+openai==1.14.0
 datetime
 python-dotenv
