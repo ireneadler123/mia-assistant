@@ -13,7 +13,7 @@ openai = OpenAI(OPENAI_API_KEY)
 
 st.set_page_config(layout='wide', page_title='Học Tiếng Anh cùng trợ lý ảo Mia', page_icon='heart')
 # Set API key for OpenAI. Replace 'YOUR_OPENAI_API_KEY' with your actual API key.
-openai.api_key = secure
+openai.api_key = openai
 
 name = st.text_input('Hãy cho Mia xin tên của bạn nhé')
 
